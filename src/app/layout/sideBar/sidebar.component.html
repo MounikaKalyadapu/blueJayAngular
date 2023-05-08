@@ -1,0 +1,29 @@
+<div class="container sideBarComp">
+    <div class="row">
+        <div class="col-12 headingTile">
+            <div class="Heading">
+                <img src="../../../assets/bluejayNoBackground.png" alt="titleBlueJay" width="25%" height="25%">
+                <div class="titleStyling">BLUEJAY</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="menuContent">
+                <div class="titleTile">
+                    MENU
+                </div>
+                <div class="ContentDropdown">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown=!toggleDropdown">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu"  [ngStyle]="{'display':toggleDropdown?'block':'none'}">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

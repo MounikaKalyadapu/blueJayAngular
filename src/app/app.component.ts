@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BlueJay';
+  toggleSidebar = true;
+  toggleBarEmitted(value:boolean){
+    this.toggleSidebar = value;
+  }
 }

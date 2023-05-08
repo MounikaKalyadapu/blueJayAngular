@@ -1,1 +1,11 @@
-<h1>Main Page BlueJay App</h1>
+<div class="container-fluid" id="bluejayApplicationStyle">
+  <div class="row">
+    <div class="col-3" *ngIf="toggleSidebar" id="sideBarComponent">
+    <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-9" id="mainContentCompStyle" [ngClass]="toggleSidebar?'col-9':'col-12'">
+      <app-header (emitToggle)="toggleBarEmitted($event)"></app-header>
+      <app-main></app-main>
+    </div>
+  </div>
+</div>
